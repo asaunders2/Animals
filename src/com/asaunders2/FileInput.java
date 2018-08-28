@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * @author mgreen14
  * @author Aaron Saunders
- * @version
+ * @version 1
  */
 public class FileInput {
 
@@ -30,7 +30,7 @@ public class FileInput {
     }
 
     /**
-     * @param line takes in a line of the file
+     * @param line string that takes in a line of the file
      * @throws FileNotFoundException if the file is not found it will notify that the user cannot write to that file
      */
     public void fileRead() {
@@ -46,8 +46,8 @@ public class FileInput {
 
     /**
      *
-     * @return returns the line being wrote to the file
-     * @return returns an error if the line can't be read
+     * @return returns a string showing information from a line
+     * @return returns a string error message if the line can't be read
      */
     public String fileReadLine() {
         try {

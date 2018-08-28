@@ -2,10 +2,21 @@ package com.asaunders2;
 
 import java.util.ArrayList;
 
+/**
+ * @author mgreen14
+ * @author Aaron Saunders
+ * @version 1
+ */
+
 public class Main {
 
     private final static FileOutput outFile = new FileOutput("animals.txt");
     private final static FileInput inFile = new FileInput("animals.txt");
+
+    /**
+     *
+     * @param zoo is an instance of the Talkable object
+     */
     public static void main(String[] args) {
 
         ArrayList<Talkable> zoo = new ArrayList<>();

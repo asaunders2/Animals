@@ -1,7 +1,9 @@
 package com.asaunders2;
 
 /**
- * Created by mgreen14 on 12/27/17.
+ * @author mgreen14
+ * @author Aaron Saunders
+ * @version 1
  */
 public interface Talkable {
     String talk();

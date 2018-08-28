@@ -12,7 +12,7 @@ public class Dog extends Pet implements Talkable {
     /**
      *
      * @param friendly boolean showing if the dog is friendly or not
-     * @param name gets the dogs name from the super class
+     * @param name string representing the dogs name
      */
     public Dog(boolean friendly, String name) {
         super(name);
@@ -21,7 +21,7 @@ public class Dog extends Pet implements Talkable {
 
     /**
      *
-     * @return returns whether or not the dog is friendly
+     * @return returns boolean showing whether or not the dog is friendly
      */
     public boolean isFriendly() {
         return friendly;

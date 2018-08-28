@@ -10,8 +10,8 @@ public class Cat extends Pet implements Talkable {
 
     /**
      *
-     * @param mousesKilled tracks number of mice killed
-     * @param name gets the name of the cat
+     * @param mousesKilled integer that tracks number of mice killed
+     * @param name string showing the name of the cat
      */
     public Cat(int mousesKilled, String name) {
         super(name);

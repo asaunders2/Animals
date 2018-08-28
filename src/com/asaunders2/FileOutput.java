@@ -3,7 +3,9 @@ package com.asaunders2;
 import java.io.*;
 
 /**
- * Created by mgreen14 on 12/27/17.
+ * @author mgreen14 on
+ * @author Aaron Saunders
+ * @version 1
  */
 public class FileOutput {
 
@@ -12,7 +14,7 @@ public class FileOutput {
 
     /**
      *
-     * @param fileName the file name to be used when opening a file
+     * @param fileName is a string showing the file name to be used when opening a file
      */
     public FileOutput(String fileName) {
         this.fileName = fileName;
@@ -26,7 +28,7 @@ public class FileOutput {
 
     /**
      *
-     * @param line represents one line of a file
+     * @param line is a string represents one line of a file
      */
     public void fileWrite(String line) {
         try {
