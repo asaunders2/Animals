@@ -8,4 +8,5 @@ package com.asaunders2;
 public interface Talkable {
     String talk();
     String getName();
+
 }
