@@ -10,6 +10,10 @@ public class FileOutput {
     Writer out = null;
     private String fileName;
 
+    /**
+     *
+     * @param fileName the file name to be used when opening a file
+     */
     public FileOutput(String fileName) {
         this.fileName = fileName;
         try {
@@ -20,6 +24,10 @@ public class FileOutput {
         }
     }
 
+    /**
+     *
+     * @param line represents one line of a file
+     */
     public void fileWrite(String line) {
         try {
             out.write(line+"\n");
@@ -29,6 +37,9 @@ public class FileOutput {
         }
     }
 
+    /**
+     * closes the file
+     */
     public void fileClose() {
         if (out != null) {
             try {

@@ -6,13 +6,20 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Created by mgreen14 on 12/27/17.
+ * @author mgreen14
+ * @author Aaron Saunders
+ * @version
  */
 public class FileInput {
 
     private BufferedReader in = null;
     private String fileName;
 
+    /**
+     *
+     * @param fileName string that holds the name of the file to be opened
+     * @throws FileNotFoundException if the file was not found an error will be displayed
+     */
     public FileInput(String fileName) {
         this.fileName = fileName;
         try {
@@ -22,6 +29,10 @@ public class FileInput {
         }
     }
 
+    /**
+     * @param line takes in a line of the file
+     * @throws FileNotFoundException if the file is not found it will notify that the user cannot write to that file
+     */
     public void fileRead() {
         String line;
         try {
@@ -33,6 +44,11 @@ public class FileInput {
         }
     }
 
+    /**
+     *
+     * @return returns the line being wrote to the file
+     * @return returns an error if the line can't be read
+     */
     public String fileReadLine() {
         try {
             String line = in.readLine();
@@ -43,6 +59,9 @@ public class FileInput {
         }
     }
 
+    /**
+     * closes the file
+     */
     public void fileClose() {
         if (in != null) {
             try {
