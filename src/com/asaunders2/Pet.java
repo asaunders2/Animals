@@ -1,23 +1,23 @@
 package com.asaunders2;
 
-/**
+/**Defines the attributes and behavior of the Pet object
  * @author mgreen14
- * @author Aaron Saunders
- * @bersion 1
+ * @author asaunders2
+ * @bersion 1.1, 9/1/20018
  */
 public abstract class Pet {
     protected String name;
 
     /**
-     *
-     * @param name is a string showing the name of the pet being passed in
+     * Sets the name of the Pet object
+     * @param name the string value of the pet being passed in
      */
     public Pet(String name) {
         this.name = name;
     }
 
     /**
-     *
+     * Returns the name of the Pet object
      * @return returns the string for the name of the pet
      */
     public String getName() {
