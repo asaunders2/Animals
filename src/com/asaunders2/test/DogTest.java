@@ -1,5 +1,6 @@
 package com.asaunders2.test;
 
+import com.asaunders2.Dog;
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
@@ -7,8 +8,11 @@ import org.junit.Test;
 
 public class DogTest extends TestCase {
 
+    Dog testDog;
+
     @Before
     public void setUp() throws Exception {
+        testDog = new Dog(true, "Bently");
     }
 
     @After
@@ -17,6 +21,7 @@ public class DogTest extends TestCase {
 
     @Test
     public void isFriendly() {
+        assertEquals(true, testDog.isFriendly());
     }
 
     @Test
@@ -25,6 +30,6 @@ public class DogTest extends TestCase {
 
     @Test
     public String toString() {
-        return null;
+        return (getName());
     }
 }
