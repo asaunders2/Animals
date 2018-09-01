@@ -1,45 +1,50 @@
 package com.asaunders2;
 
-/**
+/** Defines the attributes and behavior of the Dog object
  * @author mgreen14
- * @author Aaron Saunders
- * @version 1
+ * @author asaunders2
+ * @version 1.1, 9/1/2018
  */
+
 
 public class Dog extends Pet implements Talkable {
     private boolean friendly;
 
     /**
-     *
-     * @param friendly boolean showing if the dog is friendly or not
-     * @param name string representing the dogs name
+     * Constructs a new Dog with a friendliness flag and name
+     * @param friendly the indicator whether the Dog is friendly as a boolean value
+     * @param name     the name of the Dog inherited from the super class represented as a string
      */
+
     public Dog(boolean friendly, String name) {
         super(name);
         this.friendly = friendly;
     }
 
     /**
-     *
-     * @return returns boolean showing whether or not the dog is friendly
+     * Returns the indication of whether the Dog is friendly
+     * @return the friendliness indicator of the Dog using the friendly boolean
      */
+
     public boolean isFriendly() {
         return friendly;
     }
 
     /**
-     *
-     * @return returns a string for the dog's bark
+     * Returns the Dog's speech, overriding parent classes' speech
+     * @return the speech of the Dog
      */
+
     @Override
     public String talk() {
         return "Bark";
     }
 
     /**
-     *
-     * @return returns a string with the dog's name and if its friendly
+     * Returns the Dog object's String representation
+     * @return the String representing the Dog object
      */
+
     @Override
     public String toString() {
         return "Dog: " + "name=" + name + " friendly=" + friendly;
