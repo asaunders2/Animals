@@ -11,8 +11,8 @@ public class Cat extends Pet implements Talkable {
 
     /**
      * Constructs a new Cat with a mousesKilled value and name
-     * @param mousesKilled integer that tracks number of mice killed
-     * @param name         string showing the name of the cat
+     * @param mousesKilled the integer that tracks number of mice killed
+     * @param name         the string showing the name of the cat
      */
 
     public Cat(int mousesKilled, String name) {
