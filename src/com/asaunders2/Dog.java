@@ -27,6 +27,7 @@ public class Dog extends Pet implements Talkable {
      */
 
     public boolean isFriendly() {
+
         return friendly;
     }
 
@@ -42,7 +43,8 @@ public class Dog extends Pet implements Talkable {
 
     /**
      * Returns the Dog object's String representation
-     * @return the String representing the Dog object
+     * @return the String representing the Dog object's name and
+     * whether or not it is friendly
      */
 
     @Override
