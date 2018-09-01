@@ -42,7 +42,7 @@ public class Dog extends Pet implements Talkable {
     }
 
     /**
-     * Returns the Dog object's String representation
+     * Returns the Dog object's String representation, overriding the Parent classes' toString method
      * @return the String representing the Dog object's name and
      * whether or not it is friendly
      */

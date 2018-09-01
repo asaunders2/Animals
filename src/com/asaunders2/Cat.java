@@ -45,7 +45,7 @@ public class Cat extends Pet implements Talkable {
     }
 
     /**
-     * Returns the Cat object's String representation
+     * Returns the Cat object's String representation, overriding the parent's toString method
      * @return returns a string containing the cat's name and number of mice killed
      */
     @Override

@@ -1,12 +1,13 @@
 package com.asaunders2;
 
-/**
+/** Provides the interface for a user to
+ * pass in values to the talk and getName methods
  * @author mgreen14
- * @author Aaron Saunders
- * @version 1
+ * @author asaunders2
+ * @version 1.1, 9/1/2018
  */
+
 public interface Talkable {
     String talk();
     String getName();
-
 }
