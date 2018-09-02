@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 import com.asaunders2.Student;
 
 
-public class StudentTest{
+public class StudentTest extends TestCase {
 
     Student testStudent;
 
@@ -19,21 +19,10 @@ public class StudentTest{
         testStudent = new Student( 25, "Aaron");
     }
 
-    @After
-    public void tearDown() throws Exception {
-    }
-
     @Test
-    public void getAge() {
+    public void testGetAge() {
         testStudent = new Student( 25, "Aaron");
         assertEquals(25, testStudent.getAge());
     }
 
-    @Test
-    public void setAge() {
-    }
-
-    @Test
-    public void talk() {
-    }
 }

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CatTest{
+public class CatTest extends TestCase{
 
     Cat testCat;
 
@@ -22,12 +22,8 @@ public class CatTest{
     }
 
     @Test
-    public void getMousesKilled() {
+    public void testGetMousesKilled() {
         assertEquals(5, testCat.getMousesKilled());
-    }
-
-    @Test
-    public void addMouse() {
     }
 
 }
