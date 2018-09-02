@@ -1,12 +1,13 @@
 package com.asaunders2.test;
 
 import com.asaunders2.Dog;
-import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DogTest extends TestCase {
+import static org.junit.Assert.assertEquals;
+
+public class DogTest{
 
     Dog testDog;
 
@@ -28,8 +29,4 @@ public class DogTest extends TestCase {
     public void talk() {
     }
 
-    @Test
-    public String toString() {
-        return (getName());
-    }
 }
