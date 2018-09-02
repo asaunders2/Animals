@@ -1,25 +1,27 @@
 package com.asaunders2;
 
-/**
+/** Defines the attributes and behavior of the Cat object
  * @author mgreen14
- * @author Aaron Saunders
- * @version 1
+ * @author asaunders2
+ * @version 1.1 9/1/2018
  */
+
 public class Cat extends Pet implements Talkable {
     private int mousesKilled;
 
     /**
-     *
-     * @param mousesKilled integer that tracks number of mice killed
-     * @param name string showing the name of the cat
+     * Constructs a new Cat with a mousesKilled value and name
+     * @param mousesKilled the integer that tracks number of mice killed
+     * @param name         the string showing the name of the cat
      */
+
     public Cat(int mousesKilled, String name) {
         super(name);
         this.mousesKilled = mousesKilled;
     }
 
     /**
-     *
+     * Returns the mousesKilled integer value
      * @return returns number of mice killed
      */
     public int getMousesKilled() {
@@ -27,15 +29,15 @@ public class Cat extends Pet implements Talkable {
     }
 
     /**
-     * increments the number of mice killed
+     * Sets the value of mousesKilled to number of mice killed + 1
      */
     public void addMouse() {
         mousesKilled++;
     }
 
     /**
-     *
-     * @return returns a string for the cat's meow
+     * Returns the talk for the Cat, overriding the parent's speech class
+     * @return Returns the speech of the Cat as a string
      */
     @Override
     public String talk() {
@@ -43,7 +45,7 @@ public class Cat extends Pet implements Talkable {
     }
 
     /**
-     *
+     * Returns the Cat object's String representation, overriding the parent's toString method
      * @return returns a string containing the cat's name and number of mice killed
      */
     @Override

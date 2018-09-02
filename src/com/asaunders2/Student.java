@@ -1,17 +1,17 @@
 package com.asaunders2;
 
-/**
+/**Defines the attributes and behavior of the Student object
  * @author mgreen14
- * @author Aaron Saunders
- * @version 1
+ * @author asaunders2
+ * @version 1.1, 9/1/2018
  */
 public class Student extends Person implements Talkable {
     private int age;
 
     /**
-     *
-     * @param age is an integer showing the age of the person
-     * @param name is a string showing the name of the person
+     * Constructs a new Student with an age and a name passed in as parameters
+     * @param age  the integer value age for the Student Object
+     * @param name the string showing the name of the person
      */
     public Student(int age, String name) {
         super(name);
@@ -19,7 +19,7 @@ public class Student extends Person implements Talkable {
     }
 
     /**
-     *
+     * Returns the age of the Student object
      * @return returns an int for the age of the person
      */
     public int getAge() {
@@ -27,7 +27,7 @@ public class Student extends Person implements Talkable {
     }
 
     /**
-     *
+     * Sets the age of the Student object
      * @param age is an int that is used to set age
      */
     public void setAge(int age) {
@@ -35,7 +35,7 @@ public class Student extends Person implements Talkable {
     }
 
     /**
-     *
+     * Returns the Student Object's string, overriding the Parent classes' toString method
      * @return returns a string
      */
     @Override
